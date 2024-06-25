@@ -11,7 +11,7 @@ public class Main {
             System.out.println("2. Exibir Lugares Ocupados");
             System.out.println("3. Sair");
             int opcao = scanner.nextInt();
-            scanner.nextLine();  // Consumir nova linha
+            scanner.nextLine(); 
 
             switch (opcao) {
                 case 1:
@@ -23,7 +23,7 @@ public class Main {
                     String categoriaNome = scanner.nextLine();
                     System.out.print("Número do Assento (1-20): ");
                     int numeroAssento = scanner.nextInt();
-                    scanner.nextLine(); // Consumir nova linha
+                    scanner.nextLine(); 
                     
                     Categoria categoria = new Categoria(categoriaNome, numeroAssento);
                     Passageiro passageiro = new Passageiro(nome, new Cartao(numeroCartao));
